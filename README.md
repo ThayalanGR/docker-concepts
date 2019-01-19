@@ -57,7 +57,9 @@ docker kill containerid //to kill the container
 ## creating images in docker
 
 //running instannce of a image is called as container
+
 docker search imagename //searches image in docker registery
+
 docker pull imagename:version //instead of starting download the image
 
 ## building docker images interactively
