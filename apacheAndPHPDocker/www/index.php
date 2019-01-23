@@ -1,1 +1,1 @@
-<? echo "<p>Hello?</p>"; ?>
+<? echo "<p>Hello world</p>"; ?>

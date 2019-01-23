@@ -147,3 +147,13 @@ docker inspect --format '{{ .NetworkSettings.IPAddress }}' containerid
 apache and php on docker
 
 //apacheAndPHPDocker/dockerfile
+
+## Mounting volume for development
+
+mapping local dev dir -> dir inside a container
+
+docker run -it -p 8888:80 -v hostdir:containerdir ---name contname image name bash
+
+docker run -it -p 8000:80 -v "G:\docker-concepts\apacheAndPHPDocker\www":/var/www/site --name sample server bash
+
+-->then run service apache2 restart
