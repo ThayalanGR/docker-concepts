@@ -90,7 +90,7 @@ docker rmi imageid
 ```
 ## Remove all stopped containers
 ```
-docker rm \$(docker ps -a -q)
+docker rm $(docker ps -a -q)
 ```
 ## building docker image with dockerfile
 ```
@@ -154,7 +154,9 @@ mapping local dev dir -> dir inside a container
 
 docker run -it -p 8888:80 -v hostdir:containerdir ---name contname image name bash
 
-docker run -it -p 8000:80 -v "G:\docker-concepts\apacheAndPHPDocker\www":/var/www/site --name sample server bash
+docker run -it -p 8000:80 -v $pwd\www:/var/www/site --name sample server bash
+
+// $pwd provides current working directory
 
 -->then run service apache2 restart
 ```
