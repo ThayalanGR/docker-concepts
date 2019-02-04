@@ -160,3 +160,27 @@ docker run -it -p 8000:80 -v $pwd\www:/var/www/site --name sample server bash
 
 -->then run service apache2 restart
 ```
+
+## sharing volumes in other container
+
+```
+docker run -it --name alpha -v /var/sharedfolder ubuntu bash
+
+//create a text file inside the sharedfolder
+
+echo "this is my shared folder" > myfile.txt
+
+//exit the containers bash
+
+//create another container and make use of previous container shared folder within this container
+
+docker run -it --nama beta --volumes-from alpha ubuntu bash
+
+//now you can read or write the data from shared folder from alpha container
+
+//the main feature of this feature is that , "it can be used as a data container", even the container's shared folder is
+//accessible if it is not running interactively, it is the major advantage created by docker
+
+
+
+```
