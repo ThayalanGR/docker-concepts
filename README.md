@@ -184,3 +184,14 @@ docker run -it --nama beta --volumes-from alpha ubuntu bash
 
 
 ```
+
+## docker inspect
+
+```
+//for container
+docker inspect alpha
+
+//for image
+docker inspect ubuntu
+
+```
