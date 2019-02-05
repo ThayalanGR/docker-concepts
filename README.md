@@ -251,3 +251,63 @@ get mycountry
 
 ```
 
+## docker-hub upload and download images
+
+```
+// to login and logout
+
+docker login 
+
+docker logout
+
+// before we upload our custom image to docker-hub we need to tag our custom image with id using following command
+
+docker tag imagename dockerid/imagename
+
+// in my case i am going to tag a sample apache image that we have created during volume learning lecture
+
+docker tag sampleapache thayalangr/apachesample
+
+// now you can see your tagged image under docker images
+
+docker images
+
+// now push your tagged custom image to docker-hub using following command
+
+docker push tagged-imagename
+
+// in my case 
+
+docker push thayalangr/apachesample
+
+// after successfull push now you can able to see your custom docker image in your docker registery
+
+// visit https://hub.docker.com to see your uploaded docker image
+
+// yeah!!! we have uploaded our custom image to docker registery
+
+// now we can able to download or ship our docker image 
+
+// we can pull it directly from docker-hub using following command
+
+docker pull taggedimagename
+
+// in my case
+
+docker pull thayalangr/apachesample
+
+// now you can able to run in any docker machine by pulling like this manner
+
+// we can (push or upload or provide update) to our custom image using following command
+
+docker push thayalangr/apachesample:tagname
+
+// so we can serve multiple versions our image to docker registery
+
+// for pulling the specific version or tag of our custom image 
+
+// we should specify the tag name along with it
+
+docker pull thayalangr/apachesample:tagname
+
+```
