@@ -195,3 +195,59 @@ docker inspect alpha
 docker inspect ubuntu
 
 ```
+
+## linking containers and talk with each other using ports
+
+```
+// for example purpose download redis server
+
+docker pull redis
+
+// run a container using that pulled redis image
+
+docker run -d --name redisserver redis
+
+// now link the above container with the following container
+
+docker run -it --name redisclient1 --link redisserver:redis redis bash
+
+// here redisserver:redis is servername:aliasname
+
+// check the container is linked using the following command
+
+cat /etc/hosts
+
+// we can connect to the linked container using following command
+
+redis-cli -h redis
+
+// now we can set get delete key value pairs in linked container
+
+set myname "yourname"
+
+set mycountry "yourcountry"
+
+//get the key values using following commands
+
+get myname
+
+get mycountry
+
+// we can make link to multiple client servers to the redisserver for example create another client server
+
+docker run -it --name redisclient2 --link redisserver:redis redis bash
+
+// now check the keyvalue pairs that we have created in previously created client
+
+redis-cli -h redis
+
+get myname
+
+get mycountry
+
+// now you should get the same key values that we have created before in client one , 
+
+// thus we can link multiple containers with each other to share resource between them
+
+```
+
