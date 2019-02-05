@@ -346,8 +346,7 @@ docker pull thayalangr/apachesample:tagname
 #### dockerfile-entry-point-command
  [dockerfile-entry-point-command](#dockerfile-entry-point-command)
 #### override-and-enter-bash-from-entrypoint-command-in-dockerfile-with
- [override-and-enter-bash-from-entrypoint-command-in-dockerfile-with] 
- (#override-and-enter-bash-from-entrypoint-command-in-dockerfile-with)
+ [override-and-enter-bash-from-entrypoint-command-in-dockerfile-with](#override-and-enter-bash-from-entrypoint-command-in-dockerfile-with)
 #### docker-container-networking-basics
  [docker-container-networking-basics](#docker-container-networking-basics)
 #### docker-port-mapping
