@@ -311,3 +311,33 @@ docker push thayalangr/apachesample:tagname
 docker pull thayalangr/apachesample:tagname
 
 ```
+## glossary
+
+### thus we have learned most frequently used concepts of docker such as
+
+[run-simple-container](#run-simple-container)
+[running-container-in-background](#running-container-in-background)
+[logs-from-the-container](#logs-from-the-container)
+[container-history](#container-history)
+[stopping-and-killing-containers](#stopping-and-killing-containers)
+[creating-images-in-docker](#creating-images-in-docker)
+[building-docker-images-interactively](#building-docker-images-interactively)
+[tagging-name-for-the-images](#tagging-name-for-the-images)
+[remove-docker-container](#remove-docker-container)
+[remove-docker-image](#remove-docker-image)
+[remove-all-stopped-containers](#remove-all-stopped-containers)
+[building-docker-image-with-dockerfile](#building-docker-image-with-dockerfile)
+[docker-history-and-related-commands](#docker-history-and-related-commands)
+[dockerfile-cmd-command](#dockerfile-cmd-command)
+[dockerfile-entry-point-command](#dockerfile-entry-point-command)
+[override-and-enter-bash-from-entrypoint-command-in-dockerfile-with](#override-and-enter-bash-from-entrypoint-command-in-dockerfile-with)
+[docker-container-networking-basics](#docker-container-networking-basics)
+[docker-port-mapping](#docker-port-mapping)
+[assign-port-number-to-container-manually](#assign-port-number-to-container-manually)
+[ipaddress-of-a-container](#ipaddress-of-a-container)
+[docker-for-development](#docker-for-development)
+[mounting-volume-for-development](#mounting-volume-for-development)
+[sharing-volumes-in-other-container](#sharing-volumes-in-other-container)
+[docker-inspect](#docker-inspect)
+[linking-containers-and-talk-with-each-other-using-ports](#linking-containers-and-talk-with-each-other-using-ports)
+[docker-hub-upload-and-download-images](#docker-hub-upload-and-download-images)
